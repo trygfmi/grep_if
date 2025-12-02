@@ -4,7 +4,7 @@
 
 
 <div class="wp-block-group">
-<p>このリポジトリは、xargsコマンドを実行して他のコマンドが出力した文字列を|(パイプ)で受け取り整形します</p>
+<p>このリポジトリは、grepコマンドを実行して対象ファイルの文字列を検索後、if文を使用して条件分岐するプログラムを実行します</p>
 </div>
 
 
@@ -26,7 +26,7 @@
 
 
 <div class="wp-block-group">
-<p>上記のコマンドをインストール済みの方は、以下のコマンドを実行してリポジトリからダウンロード後、ディレクトリを移動し、xargsコマンドを実行して出力結果が変化することを確認してください</p>
+<p>上記のコマンドをインストール済みの方は、以下のコマンドを実行してリポジトリからダウンロード後、ディレクトリを移動し、シェルスクリプトを実行して条件分岐することを確認してください</p>
 
 
 
@@ -35,21 +35,18 @@
 
 
 <div class="wp-block-group">
-<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/xargs_shapeString
-cd xargs_shapeString
-find . -type f -name "*.txt"
-find . -type f -name "*.txt" | xargs</code></pre>
+<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/grep_if
+cd grep_if
+cat start_grep_if.sh
+./start_grep_if.sh hello
+./start_grep_if.sh aaa</code></pre>
 
 
 
 <details class="wp-block-details"><summary>出力結果</summary>
-<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./folder1/example3.txt
-./folder1/example2.txt
-./folder1/folder2/example4.txt
-./folder1/folder3/example5.txt
-./example1.txt
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>hello grep if
 
-./folder1/example3.txt ./folder1/example2.txt ./folder1/folder2/example4.txt ./folder1/folder3/example5.txt ./example1.txt</code></pre>
+not found</code></pre>
 </details>
 </div>
 
@@ -65,21 +62,18 @@ find . -type f -name "*.txt" | xargs</code></pre>
 
 
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>source ~/bashrc_folder/macports_alias
-git clone https://github.com/trygfmi/xargs_shapeString
-cd xargs_shapeString
-find . -type f -name "*.txt"
-find . -type f -name "*.txt" | xargs</code></pre>
+git clone https://github.com/trygfmi/grep_if
+cd grep_if
+cat start_grep_if.sh
+./start_grep_if.sh hello
+./start_grep_if.sh aaa</code></pre>
 
 
 
 <details class="wp-block-details"><summary>出力結果</summary>
-<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
-./folder1/example2.txt
-./folder1/example3.txt
-./folder1/folder2/example4.txt
-./folder1/folder3/example5.txt
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>hello grep if
 
-./example1.txt ./folder1/example2.txt ./folder1/example3.txt ./folder1/folder2/example4.txt ./folder1/folder3/example5.txt</code></pre>
+not found</code></pre>
 </details>
 </div>
 
@@ -95,21 +89,18 @@ find . -type f -name "*.txt" | xargs</code></pre>
 
 
 <div class="wp-block-group">
-<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/xargs_shapeString
-cd xargs_shapeString
-find . -type f -name "*.txt"
-find . -type f -name "*.txt" | xargs</code></pre>
+<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/grep_if
+cd grep_if
+cat start_grep_if.sh
+./start_grep_if.sh hello
+./start_grep_if.sh aaa</code></pre>
 
 
 
 <details class="wp-block-details"><summary>出力結果</summary>
-<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
-./folder1/example3.txt
-./folder1/example2.txt
-./folder1/folder3/example5.txt
-./folder1/folder2/example4.txt
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>hello grep if
 
-./example1.txt ./folder1/example3.txt ./folder1/example2.txt ./folder1/folder3/example5.txt ./folder1/folder2/example4.txt</code></pre>
+not found</code></pre>
 </details>
 </div>
 
@@ -120,21 +111,18 @@ find . -type f -name "*.txt" | xargs</code></pre>
 
 
 <div class="wp-block-group">
-<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/xargs_shapeString
-cd xargs_shapeString
-find . -type f -name "*.txt"
-find . -type f -name "*.txt" | xargs</code></pre>
+<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/grep_if
+cd grep_if
+cat start_grep_if.sh
+./start_grep_if.sh hello
+./start_grep_if.sh aaa</code></pre>
 
 
 
 <details class="wp-block-details"><summary>出力結果</summary>
-<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
-./folder1/example2.txt
-./folder1/example3.txt
-./folder1/folder2/example4.txt
-./folder1/folder3/example5.txt
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>hello grep if
 
-./example1.txt ./folder1/example2.txt ./folder1/example3.txt ./folder1/folder2/example4.txt ./folder1/folder3/example5.txt</code></pre>
+not found</code></pre>
 </details>
 </div>
 </div>
@@ -185,25 +173,22 @@ find . -type f -name "*.txt" | xargs</code></pre>
 
 
 <div class="wp-block-group">
-<p>以下のコマンドを実行することで詳細のような文字列が出力されるはずです</p>
+<p>以下のコマンドを実行することで詳細のようなtrueとfalseの場合の出力が得られるはずです</p>
 
 
 
-<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/xargs_shapeString
-cd xargs_shapeString
-find . -type f -name "*.txt"
-find . -type f -name "*.txt" | xargs</code></pre>
+<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/grep_if
+cd grep_if
+cat start_grep_if.sh
+./start_grep_if.sh hello
+./start_grep_if.sh aaa</code></pre>
 
 
 
 <details class="wp-block-details"><summary>詳細</summary>
-<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./folder1/example3.txt
-./folder1/example2.txt
-./folder1/folder2/example4.txt
-./folder1/folder3/example5.txt
-./example1.txt
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>hello grep if
 
-./folder1/example3.txt ./folder1/example2.txt ./folder1/folder2/example4.txt ./folder1/folder3/example5.txt ./example1.txt</code></pre>
+not found</code></pre>
 </details>
 </div>
 </details>
@@ -270,26 +255,23 @@ echo 'alias git="/opt/local/bin/git"' >> ~/bashrc_folder/macports_alias</code></
 
 
 <div class="wp-block-group">
-<p>以下のコマンドを実行することで詳細のような文字列が出力されるはずです</p>
+<p>以下のコマンドを実行することで詳細のようなtrueとfalseの場合の出力が得られるはずです</p>
 
 
 
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>source ~/bashrc_folder/macports_alias
-git clone https://github.com/trygfmi/xargs_shapeString
-cd xargs_shapeString
-find . -type f -name "*.txt"
-find . -type f -name "*.txt" | xargs</code></pre>
+git clone https://github.com/trygfmi/grep_if
+cd grep_if
+cat start_grep_if.sh
+./start_grep_if.sh hello
+./start_grep_if.sh aaa</code></pre>
 
 
 
 <details class="wp-block-details"><summary>詳細</summary>
-<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
-./folder1/example2.txt
-./folder1/example3.txt
-./folder1/folder2/example4.txt
-./folder1/folder3/example5.txt
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>hello grep if
 
-./example1.txt ./folder1/example2.txt ./folder1/example3.txt ./folder1/folder2/example4.txt ./folder1/folder3/example5.txt</code></pre>
+not found</code></pre>
 </details>
 </div>
 </details>
@@ -370,7 +352,7 @@ find . -type f -name "*.txt" | xargs</code></pre>
 
 
 <div class="wp-block-group">
-<p>以下のコマンドを実行することで詳細のような文字列が出力されるはずです</p>
+<p>以下のコマンドを実行することで詳細のようなtrueとfalseの場合の出力が得られるはずです</p>
 
 
 
@@ -379,21 +361,18 @@ find . -type f -name "*.txt" | xargs</code></pre>
 
 
 <div class="wp-block-group">
-<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/xargs_shapeString
-cd xargs_shapeString
-find . -type f -name "*.txt"
-find . -type f -name "*.txt" | xargs</code></pre>
+<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/grep_if
+cd grep_if
+cat start_grep_if.sh
+./start_grep_if.sh hello
+./start_grep_if.sh aaa</code></pre>
 
 
 
 <details class="wp-block-details"><summary>詳細</summary>
-<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
-./folder1/example3.txt
-./folder1/example2.txt
-./folder1/folder3/example5.txt
-./folder1/folder2/example4.txt
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>hello grep if
 
-./example1.txt ./folder1/example3.txt ./folder1/example2.txt ./folder1/folder3/example5.txt ./folder1/folder2/example4.txt</code></pre>
+not found</code></pre>
 </details>
 </div>
 
@@ -404,21 +383,18 @@ find . -type f -name "*.txt" | xargs</code></pre>
 
 
 <div class="wp-block-group">
-<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/xargs_shapeString
-cd xargs_shapeString
-find . -type f -name "*.txt"
-find . -type f -name "*.txt" | xargs</code></pre>
+<pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/grep_if
+cd grep_if
+cat start_grep_if.sh
+./start_grep_if.sh hello
+./start_grep_if.sh aaa</code></pre>
 
 
 
 <details class="wp-block-details"><summary>詳細</summary>
-<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
-./folder1/example2.txt
-./folder1/example3.txt
-./folder1/folder2/example4.txt
-./folder1/folder3/example5.txt
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>hello grep if
 
-./example1.txt ./folder1/example2.txt ./folder1/example3.txt ./folder1/folder2/example4.txt ./folder1/folder3/example5.txt</code></pre>
+not found</code></pre>
 </details>
 </div>
 </div>
@@ -431,6 +407,4 @@ find . -type f -name "*.txt" | xargs</code></pre>
 
 
 
-<div class="wp-block-group">
-<p>複数行を空白区切りで一つの行に出力するのが特徴です</p>
-</div>
+<p>-qオプションで終了ステータスを出力して、その結果に応じて条件分岐する仕組みになっています</p>
